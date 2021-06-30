@@ -21,3 +21,20 @@ def bingo(request):
     }
     return render(request, bingo)
 
+gridSize = 5
+minNum = 1  # Minimum number for each column
+maxNum = 20  # Max number for each column
+cards = 2  # Two cards made for now
+
+allCards = []  # List of all cards generated
+randRange = range(minNum, maxNum+1)  # Might want maxNum = 20
+for h in range(cards):  # Generates cards
+    newCard = []  # New card that will be filled in
+    # Loop through each column (B, I, N, G, O usually)
+    for i in range(gridSize):
+        # Generate numbers for that column
+        # Generate 5 (or gridSize) random numbers
+        newCard.append(random.sample(randRange, gridSize))
+    allCards.append(newCard)  # Add this newly generated card
+
+print(allCards)
