@@ -18,4 +18,4 @@ mando_taunts = ["You're no good to me dead.","As you wish.","This is the way.","
 
 kyloren_taunts = ["I feel it again, the pull to the light.","I will finish what you started.","Don't be afraid, I feel it too.","You know I can take anything I want.","Let the past die.  Kill it if you have to.","You can't hide, not from me.","We're not done yet.","I will fulfill our destiny.","I want every gun that we have to fire on that man.","I'll show you the Dark side.","You need a teacher.  I can show you the ways of the Force.","I know what I have to do."]
 
-logging.info(random.choice(luke_taunts))
+logging.info(random.choice(kyloren_taunts))
