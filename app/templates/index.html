@@ -7,9 +7,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {% load static %}
-        <link rel="stylesheet" href="">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
-    <body>
+    <body> 
+    <!-- start original placeholder html> -->
         <div id='header'>
             <h1>placeholder</h1>
         </div>
@@ -24,5 +26,36 @@
         {% endif %}
         </div>
         <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    </body>
+    <!-- end original placeholder html -->
+    <!-- Ep. 4 crawl code.  Need to add start button that initiates crawl and also plays star wars theme song, edit crawl text for project, end of crawl needs to redirect to bingo.html-->
+    <canvas id="canvas" class="stretch"></canvas>
+        <div id="crawl-container" class="stretch">
+            <div id="crawl">
+                <div id="crawl-content">
+                    <h1>
+                        Episode IV
+                    </h1>
+                    <h2>
+                        A NEW HOPE
+                    </h2>
+                        <p>
+                    It is a period of civil war. Rebel spaceships, striking from a hidden
+                    base, have won their first victory against the evil Galactic Empire.
+                        </p>
+                        <p>
+                    During the battle, rebel spies managed to steal secret plans to the
+                    Empire’s ultimate weapon, the DEATH STAR, an armored space station
+                    with enough power to destroy an entire planet.
+                        </p>
+                        <p>
+                    Pursued by the Empire’s sinister agents, Princess Leia races home
+                    aboard her starship, custodian of the stolen plans that can save her
+                    people and restore freedom to the galaxy....
+                        </p>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'js/crawl.js' %}"></script>
     </body>
 </html>
