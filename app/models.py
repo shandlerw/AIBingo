@@ -14,3 +14,4 @@ class character(models.Model):
     char_desc = models.CharField (max_length=250)
     char_quotes = models.CharField (max_length= 125)
     
+#git test
