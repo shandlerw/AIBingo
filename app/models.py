@@ -11,7 +11,6 @@ class Character(models.Model):
     name = models.CharField(max_length=15)
     affiliation = models.CharField(max_length=15)
     char_pic = models.CharField (max_length=50)
-    char_desc = models.CharField (max_length=250)
+    char_desc = models.CharField
     char_quotes = models.CharField (max_length= 125)
     
-#git test
