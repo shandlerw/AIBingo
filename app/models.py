@@ -8,9 +8,9 @@ from django.db.models.fields import EmailField, IntegerField, related
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
 
 class Character(models.Model):
-    name = models.CharField(max_length=15)
-    affiliation = models.CharField(max_length=15)
-    char_pic = models.CharField (max_length=50)
+    name = models.CharField
+    affiliation = models.CharField
+    char_pic = models.ImageField
     char_desc = models.CharField
-    char_quotes = models.CharField (max_length= 125)
+    char_quotes = models.CharField
     
